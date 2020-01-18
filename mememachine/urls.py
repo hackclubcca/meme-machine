@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mememachine import views
+from .views import HomePageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
     path('signup/', views.signup, name="signup"),
-    path('signuppost/', views.signuppost, name="signuppost")
+    path('signuppost/', views.signuppost, name="signuppost"),
+    path('', HomePageView.as_view(), name='home'),
 ]
