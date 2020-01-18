@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.views.generic import ListView
+from .models import Meme
 
-def home(request):
-    return render(request, "index.html", context={})
+"""def home(request):
+    return render(request, "main/home.html", context={})"""
 
 def signup(request):
-    return render(request, "signup.html", context={})
+    return render(request, "main/signup.html", context={})
 
 def signuppost(request):
     return
