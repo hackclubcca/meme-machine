@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+{% for meme in object_list %}
+<div class="meme">
+  <h3><a href="{% url 'meme' meme.pk %}">{{ meme.title }}</a></h3>
+  <p>{{ meme.author }}</p>
+  <img src="{{ meme.image_url }}">
+  <p>{{ meme.caption }}</p>
+</div>
