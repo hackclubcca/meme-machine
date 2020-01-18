@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MemeMachine</title>
+        <link href="/static/css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+        <form action="/signuppost/" method=POST>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter Email">
+
+                <label for="passwordone">Password:</label>
+                <input type="text" id="passwordone" name="passwordone" placeholder="Enter Password">
+
+                <label for="passwordtwo">Confirm Password:</label>
+                <input type="text" id="passwordtwo" name="passwordtwo" placeholder="Enter Password">
+
+                <lavel for="pfp">Profile Picture Link:</lavel>
+                <input type="text" id="pfp" name="pfp" placeholder="Enter Profile Picture Link">
+            <button type="submit">Sign Up</button>
+        </form>
+    </body>
+</html>
